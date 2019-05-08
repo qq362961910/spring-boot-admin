@@ -3,8 +3,8 @@
   "description": "Spring Boot Admin UI",
   "private": true,
   "scripts": {
-    "watch": "vue-cli-service build --watch",
-    "build": "vue-cli-service build",
+    "watch": "vue-cli-service build --watch  --mode development",
+    "build": "vue-cli-service build  --mode development",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },

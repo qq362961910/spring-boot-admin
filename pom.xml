@@ -62,10 +62,12 @@
         <coveralls-maven-plugin.version>4.3.0</coveralls-maven-plugin.version>
         <asciidoctor-maven-plugin.version>1.5.6</asciidoctor-maven-plugin.version>
         <git-commit-id-plugin.version>2.2.5</git-commit-id-plugin.version>
-        <flatten-maven-plugin.version>1.0.1</flatten-maven-plugin.version>
+        <flatten-maven-plugin.version>1.1.0</flatten-maven-plugin.version>
         <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
         <checkstyle.version>8.18</checkstyle.version>
         <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
+        <skipNpmBuild>false</skipNpmBuild>
+        <skipTests>true</skipTests>
     </properties>
     <modules>
         <module>spring-boot-admin-server</module>
@@ -76,7 +78,7 @@
         <module>spring-boot-admin-build</module>
         <module>spring-boot-admin-starter-server</module>
         <module>spring-boot-admin-starter-client</module>
-        <module>spring-boot-admin-samples</module>
+        <!--<module>spring-boot-admin-samples</module>-->
     </modules>
     <organization>
         <name>codecentric AG</name>
@@ -124,7 +126,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <executions>
@@ -157,7 +159,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
             <plugin>
                 <!-- this fix is needed for the eclipse-plugin to get the right java-version -->
                 <groupId>org.apache.maven.plugins</groupId>
@@ -196,7 +198,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
                 <executions>
@@ -214,7 +216,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
         <pluginManagement>
             <plugins>

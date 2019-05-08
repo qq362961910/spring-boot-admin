@@ -1,0 +1,7 @@
+spring:
+  boot:
+    admin:
+      ui:
+        cache-templates: false
+        resource-locations: ["file:/home/amen/workspace/idea/my/spring-boot-admin/spring-boot-admin-server-ui/target/dist/", "file:/home/amen/workspace/idea/my/spring-boot-admin/spring-boot-admin-server-ui/target/dist/extensions/"]
+        template-location: "file:/home/amen/workspace/idea/my/spring-boot-admin/spring-boot-admin-server-ui/target/dist/"

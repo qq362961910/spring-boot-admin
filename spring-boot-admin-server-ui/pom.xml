@@ -93,7 +93,7 @@
                             <executable>npm</executable>
                             <arguments>
                                 <argument>run</argument>
-                                <argument>build</argument>
+                                <argument>watch</argument>
                             </arguments>
                             <environmentVariables>
                                 <PROJECT_VERSION>${project.version}</PROJECT_VERSION>
