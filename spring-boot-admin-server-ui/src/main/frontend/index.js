@@ -25,8 +25,6 @@ import Store from './store';
 import ViewRegistry from './viewRegistry';
 import views from './views';
 
-// debugger;
-
 moment.locale(window.navigator.language);
 Vue.use(VueRouter);
 Vue.use(components);
